@@ -37,7 +37,7 @@
         &:focus {
             border-color: $accent-color;
         
-        &:hover 
+        &:hover,
         &:focus .__logo {
                     fill: $accent-color;
                 }

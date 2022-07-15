@@ -11,10 +11,11 @@ $secondary-link-color: rgba(255, 255, 255, 0.6);
 $border-color: #ececec;
 $secondary-border-color: #eeeeee;
 $icon-color: #AFB1B8;
-$modal-color: rgba(0, 0, 0, 0.1);
+$modal-color: hsla(0, 0%, 0%, 0.1);
+$modal-placeholder: rgba(117, 117, 117, 0.5);
+$modal-name: rgba(117, 117, 117, 1);
 
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 $transition-duration: 0.3s;
 
 $font-open-sans: "Open Sans", sans-serif;
