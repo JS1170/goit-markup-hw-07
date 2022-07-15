@@ -338,7 +338,7 @@ summary {
 
 }
 
-/* перенес --*/
+
 body {
         background-color: var(--white-background-color);
         font-family: 'Roboto', sans-serif;
@@ -349,7 +349,7 @@ body {
         margin: 0;
         display: block;
 }
-/* --перенес */
+
 
 ul {
         padding: 0;
@@ -384,12 +384,28 @@ li {
         padding-right: 15px;
 }
 
-/* Колір основного заголовку - color: #FFFFFF; */
-/* Колір заголовків color: #212121; */
-/* Колір другорядного тексту color: #757575; */
-/* Колір акцент color: #2196F3; */
-/* Шрифт другорядний roboto */
 
+.btn {
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 10px 32px;
+        min-width: 200px;
+        text-align: center;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--white-text-color);
+        background-color: var(--accent-color);
+        justify-content: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), border-radius 250ms var(--timing-function);
+}
+
+
+/* --------------------------------------------------- */
 
 /* Header */
 
@@ -489,7 +505,7 @@ li {
         text-decoration: none;
 }
 
-.logo-studio {
+.logo__header {
         color: var(--logo-color);
 }
 
@@ -578,24 +594,6 @@ li {
 
 
 
-.hero-button {
-        border: 1px solid transparent;
-        border-radius: 4px;
-        padding: 10px 32px;
-        min-width: 200px;
-        text-align: center;
-        cursor: pointer;
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: var(--white-text-color);
-        background-color: var(--accent-color);           
-}
-
-
-
 /* Модальний блок */
 
 .modal__backdrop {
@@ -643,11 +641,7 @@ li {
 }
 
 
-.svg-btn {
-        align-items: center;
-}
-
-.modal-btn {
+.btn-small {
         position: absolute;
         top: 0;
         right: 0;
@@ -659,14 +653,15 @@ li {
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        cursor: pointer;
         border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: var(--white-background-color);
         color: var(--modal-color);
 }
 
-.svg-btn:hover,
-.svg-btn:focus {
+
+
+.btn-svg:hover,
+.btn-svg:focus {
         fill: var(--accent-color);
 }
 
@@ -693,7 +688,7 @@ li {
 
 
 
-.textarea-margin {
+.textarea--margin {
         margin-bottom: 20px;
 }
 
@@ -800,21 +795,11 @@ li {
                 margin-top: 30px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                min-width: 200px;
-                justify-content: center;
-                font-family: inherit;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 1.88;
-                letter-spacing: 0.06em;
-                border: 1px solid transparent;
-                border-radius: 4px;
-                color: var(--white-text-color);
-                background-color: var(--accent-color);
-                cursor: pointer;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), border-radius 250ms var(--timing-function);
+                
 }
+
+
+
 
 .input-group__link{
         color: var(--accent-color);
@@ -931,21 +916,6 @@ li {
 
 /* Чем мы занимаемся */
 
-/* .block-works {
-        box-sizing: border-box;
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        color: var(--primary-text-color);
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-        letter-spacing: 0.03em;
-} */
-
 .works__heading {
                 margin-top: 0;
                 margin-bottom: 50px;
@@ -967,7 +937,6 @@ li {
 
 .works__img {
         position: relative;
-        
 }
 
 .works__img img {
@@ -1253,26 +1222,10 @@ li {
  }
 
  /* Logo footer */
- 
-.logo-web {
-                text-decoration: none; 
-                color: var(--accent-color);
-                font-family: 'Raleway', sans-serif;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 26px;
-                line-height: 1.19;
-                letter-spacing: 0.03em;
-                
-}
 
-.logo-white {
+.logo__footer {
         display: inline-block;
         margin-bottom: 20px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
         color: var(--white-text-color);
       
 }
@@ -1291,27 +1244,15 @@ li {
 }
 
 
-.mailbtn {
+.footer-btn {
         display: flex;
-        justify-content: center;
         margin-left: 12px;
-        min-width: 200px;
         height: 50px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
         padding: 10px 29px;
         align-items: center;
-        text-align: center;
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1,88;
-        cursor: pointer;
-        letter-spacing: 0.06em;
-        color: var(--white-text-color);
-        background: var(--accent-color);
-        border: 1px solid transparent;
 }
+
+
 
 .footer__field {
         display: flex;
@@ -1331,7 +1272,7 @@ li {
 
 }
 
-.mailbtn-icon {
+.btn-svg {
         background-color: transparent;
         fill: var(--white-background-color);
         margin-left: 10px;
@@ -1360,7 +1301,7 @@ li {
 
 
 
-/* Portfolio. html */
+/* ---------- Portfolio. html ----------------------------------------*/
 
 
 .filters {
@@ -1427,10 +1368,10 @@ li {
 }
 
 
-button {
+/* button {
         text-transform: none;
         margin: 0;
-}
+} */
 
 
 .filters__button:hover, 
