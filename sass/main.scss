@@ -1,38 +1,31 @@
 /* Fonts - шрифти */
 @import './base/fonts';
 
+/* Base */
+@import './base/normalize';
+@import './base/reset';
+
 // /* Utils */
 @import './utils/variables';
 // @import './utils/mixins';
 // @import './utils/common';
 
-/* Base */
-@import './base/normalize';
-@import './base/reset';
+@import './base/global';
+
 
 // /* Components */
-// @import './components/hero';
-// @import './components/header';
-// @import './components/best-barber';
-// @import './components/service';
-// @import './components/master';
-// @import './components/our-chioce';
-// @import './components/our-masters';
-// @import './components/gallery';
-// @import './components/contact-us';
-// @import './components/subscribe';
-// @import './components/footer';
+@import './components/header';
+@import './components/logo';
+@import './components/hero';
+@import './components/modal';
+@import './components/benefits';
+@import './components/works';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/subscribe';
 
+// /* Components Portfolio.html*/
+@import './components/filters';
+@import './components/portfolio';
 
-
-body {
-    display: block;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-    background-color: var(--white-background-color);
-    
-}

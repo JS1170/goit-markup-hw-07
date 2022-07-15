@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <title>Web Studio</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css"/> -->
 </head>
 <body>
 
@@ -97,15 +98,9 @@
                                 </span>
                                 Соглашаюсь с рассылкой и принимаю&nbsp<a class="input-group__link" href="">Условия договора</a>
                             </label>
-                            <button class="btn form-btn" type="submit">Отправить</button>
+                            <button class="btn modal__btn" type="submit">Отправить</button>
                         </form>
                 </div>
-
-
-
-
-
-
                 </div>
     </section>  
 
@@ -157,7 +152,7 @@
 </section>
 
 <!-- блок "Чем мы занимаемся" -->
-<section class="works section">
+<section class="works">
     <div class="container">
     <h2 class="works__heading">Чем мы занимаемся</h2>
     <ul class="works__items">
@@ -176,7 +171,7 @@
 
 
 <!-- блок "наша команда" -->
-<section class="team section">
+<section class="team">
         <div class="container"> 
         <h2 class="team__heading">Наша команда</h2>
         <ul class="team__list list">
@@ -341,7 +336,7 @@
 </section>
 
 <!-- блок "Постоянные клиенты"-->
-<section class="clients section">
+<section class="clients">
     <div class="container">
         <h2 class="clients__heading">Постоянные клиенты</h2>
         <ul class="clients__list list">
@@ -447,13 +442,13 @@
                     </li>
                 </ul>
     </div>
-    <div class="footer__subscribe">
-    <h3 class="footer__heading">Подпишитесь на рассылку</h3>
-    <form class="footer__form">
+    <div class="subscribe">
+    <h3 class="subscribe__heading">Подпишитесь на рассылку</h3>
+    <form class="subscribe__form">
         <label>
-            <input class="footer__field" type="email" name="email"  placeholder="E-mail">
+            <input class="subscribe__field" type="email" name="email"  placeholder="E-mail">
         </label>
-        <button class="btn footer-btn" type="submit">Подписаться
+        <button class="btn subscribe__btn" type="submit">Подписаться
             <svg class="btn-svg" width="24px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
             </svg>
