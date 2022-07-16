@@ -300,7 +300,7 @@ li {
   display: list-item;
 }
 
-.list, .filters__box {
+.list, .filters__box, .clients__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -536,7 +536,7 @@ li {
   color: #212121;
 }
 
-.btn-svg {
+.btn-close {
   align-items: center;
 }
 
@@ -557,7 +557,7 @@ li {
   background-color: #ffffff;
   color: hsla(0deg, 0%, 0%, 0.1);
 }
-.btn-small:hover, .btn-small:focus .btn-svg {
+.btn-small:hover, .btn-small:focus .btn-close {
   fill: #2196F3;
 }
 
@@ -892,11 +892,11 @@ li {
 .clients__link:hover, .clients__link:focus {
   border-color: #2196F3;
 }
-.clients__link:hover:hover, .clients__link:hover:focus .logo, .clients__link:focus:hover, .clients__link:focus:focus .logo {
-  fill: #2196F3;
-}
-.clients__link__logo {
+.clients__logo {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__logo:hover, .clients__logo:focus {
+  fill: #afb1b8;
 }
 
 /* Footer style */

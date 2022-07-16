@@ -1,6 +1,7 @@
 /* Постоянные клиенты */
 
-.clients {
+.clients 
+{
     @extend .section;
     display: block;
 
@@ -12,7 +13,9 @@
             color: $primary-text-color;
             margin-bottom: 50px;
     }
+
     &__list {
+            @extend .list;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,6 +25,7 @@
         margin-right: 30px;
     }
 
+    
     &__link {
         display: flex;
         width: 170px;
@@ -35,17 +39,17 @@
     
         &:hover,
         &:focus {
-            border-color: $accent-color;
-        
-        &:hover,
-        &:focus .logo {
-                    fill: $accent-color;
-                }
-        }
-
+                border-color: $accent-color;
+            }
+    }   
+    
     &__logo {
-        transition: fill 250ms $timing-function;
-    }
-}
-}
-
+             transition: fill 250ms $timing-function;
+    
+        &:hover,
+        &:focus {
+            fill: $icon-color; 
+                    }
+                }
+}                
+    

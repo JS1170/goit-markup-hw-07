@@ -41,7 +41,7 @@
             color: $primary-text-color;
             }
 
-.btn-svg {
+.btn-close {
     align-items: center;
 }
 
@@ -63,9 +63,10 @@
     color: $modal-color;
 
 
-    &:hover, &:focus .btn-svg {
-        fill: $accent-color;
-    }
+    &:hover,
+    &:focus .btn-close {
+            fill: $accent-color;
+        }
 }
 
 
