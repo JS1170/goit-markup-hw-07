@@ -24,7 +24,7 @@
     &__box:not(:last-child) {
         margin-right: 30px;
     }
-
+    
     
     &__link {
         display: flex;
@@ -37,19 +37,16 @@
         fill: $icon-color;
         transition: border-color 250ms $timing-function;
     
-        &:hover,
+        &:hover ,
         &:focus {
                 border-color: $accent-color;
+                fill: $accent-color;
             }
     }   
     
     &__logo {
              transition: fill 250ms $timing-function;
     
-        &:hover,
-        &:focus {
-            fill: $icon-color; 
-                    }
                 }
 }                
     
