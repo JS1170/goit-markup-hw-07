@@ -5,6 +5,7 @@
     padding-bottom: 60px;
     background-color: $footer-background-color;
     
+    
     &__block {
     display: flex;
     }
@@ -16,7 +17,9 @@
     
     &__items:not(:last-child) {
     margin-bottom: 9px;
+
     }
+
 
     &__address {
     font-style: normal;
